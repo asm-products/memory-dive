@@ -1,0 +1,29 @@
+@import url(//fonts.googleapis.com/css?family=Lobster);
+@import url(//fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(//fonts.googleapis.com/css?family=Roboto);
+@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css);
+
+.btn-login {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 12px;
+  width: 260px;
+}
+
+.social-links {
+  margin: 15px 0 0;
+}
+.social-links li {
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+.social-links a {
+  border: 2px solid;
+  border-radius: 40px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 30px;
+}

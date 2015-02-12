@@ -1,0 +1,21 @@
+<h1>CALENDAR</h1>
+<div id="container" class="container">
+    <div ng-repeat="month in calendar">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="month-header">{{$index | monthName}}</h2>
+            </div>
+            <div class="panel-body">
+                <div ng-repeat="day in month">
+                    <div ng-if="day" class="col-md-1 col-sm-2 col-xs-4 day-calendar">
+                        <div class="day-calendar-inner">
+                            <a href="{{day.uiUrl}}" ng-class="{empty: day.count==0}">
+                                <div class="label-day pull-right">{{$index}}</div>
+                                <div class="label-count">{{day.count}}</div>                            
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>    
+</div>

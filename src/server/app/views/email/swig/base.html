@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    {% block css %}
+      <link rel="stylesheet" href="base.css">
+    {% endblock %}
+  </head>
+  <body>
+    <center>
+      <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+        <tr>
+          <td align="center" valign="top" id="bodyCell">
+            <br><br>
+
+            <table border="0" cellpadding="0" cellspacing="0" width="600px" id="container">
+              <tr>
+                <td align="center" valign="top" id="header">
+                  <img src="{{baseUrl}}/images/MemoryDiveLine.jpg" width="600px" height="50px">
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" id="main">
+                  <!-- BEGIN EMAIL -->
+                  {% block content %}
+                  {% endblock %}
+                  <!-- END EMAIL -->
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" id="header">
+                  <img src="{{baseUrl}}/images/brain-2.jpg" width="50px" height="52px">
+                  <br>
+                  <div class="footerlink"><a href="{{baseUrl}}">MemoryDive.io</a></div>
+                  <br><br><br><br>
+                </td>
+              </tr>                           
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>

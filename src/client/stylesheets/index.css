@@ -1,0 +1,72 @@
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 4em;
+  padding-bottom: 0.4em;
+}
+
+#signin-button {
+    /*  We have to pad the button as it's actually an a tag so navbar-right aligns it to the right. */
+    padding-right:0.8em !important;
+}
+
+#signin-icon {
+    /*  We have to pad the button as it's actually an a tag so navbar-right aligns it to the right. */
+    padding-top:1em;
+}
+
+footer {
+    padding-top: 2em;
+}
+
+.footer-copyright {text-align: center;}
+
+#closed-beta {
+    text-align: center;
+}
+
+#request-access {
+    text-align: center;
+}
+
+/* Calendar */
+.month-header {
+    text-align: center;
+}
+
+.day-calendar {
+    padding: 0px;
+    margin: 0px;
+}
+.day-calendar-inner {
+    margin: 4px;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+.day-calendar:hover {
+    /*background-color: #eee;*/
+}
+.day-calendar-inner:hover {
+    background-color: #eee;
+}
+.day-calendar a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #444;
+    text-decoration: none;
+    padding: 0 8px 8px 8px;
+}
+.day-calendar a.empty {
+    color: #ccc;
+}
+.day-calendar .label-day {
+    font-size: 1em;
+    color: #888;
+    padding-top: 0.6em;
+}
+.day-calendar .label-count {
+    font-size: 1.6em;
+    /*color: #444;*/
+    padding-top: 1.4em;
+}

@@ -1,0 +1,30 @@
+development:
+  baseURL: 'http://localhost:14113/'
+  local: true
+  facebook:
+    apiKey: 'process.env.MEMORY_DIVE_FACEBOOK_APP_ID'
+    secret: 'process.env.MEMORY_DIVE_FACEBOOK_APP_SECRET'
+    scope:  'basic_info email export_stream friends_photo_video_tags friends_photos friends_videos public_profile read_stream user_about_me user_actions.books user_actions.news user_actions.video user_activities user_birthday user_checkins user_events user_friends user_interests user_likes user_notes user_photo_video_tags user_photos user_questions user_relationships user_status user_subscriptions user_videos'
+
+test:
+  baseURL: 'http://localhost:14113/'
+  local: true
+  facebook:
+    apiKey: 'process.env.MEMORY_DIVE_FACEBOOK_APP_ID'
+    secret: 'process.env.MEMORY_DIVE_FACEBOOK_APP_SECRET'
+    scope:  'basic_info email export_stream friends_photo_video_tags friends_photos friends_videos public_profile read_stream user_about_me user_actions.books user_actions.news user_actions.video user_activities user_birthday user_checkins user_events user_friends user_interests user_likes user_notes user_photo_video_tags user_photos user_questions user_relationships user_status user_subscriptions user_videos'
+
+test:
+  baseURL: 'http://integration.memorydive.io'
+  local: true
+  facebook:
+    apiKey: 'process.env.MEMORY_DIVE_FACEBOOK_APP_ID'
+    secret: 'process.env.MEMORY_DIVE_FACEBOOK_APP_SECRET'
+    scope:  'basic_info email export_stream friends_photo_video_tags friends_photos friends_videos public_profile read_stream user_about_me user_actions.books user_actions.news user_actions.video user_activities user_birthday user_checkins user_events user_friends user_interests user_likes user_notes user_photo_video_tags user_photos user_questions user_relationships user_status user_subscriptions user_videos'
+
+production:
+  baseURL: 'https://app.memorydive.io/'
+  facebook:
+    apiKey: 'process.env.MEMORY_DIVE_FACEBOOK_APP_ID'
+    secret: 'process.env.MEMORY_DIVE_FACEBOOK_APP_SECRET'
+    scope:  'basic_info email export_stream friends_photo_video_tags friends_photos friends_videos public_profile read_stream user_about_me user_actions.books user_actions.news user_actions.video user_activities user_birthday user_checkins user_events user_friends user_interests user_likes user_notes user_photo_video_tags user_photos user_questions user_relationships user_status user_subscriptions user_videos'

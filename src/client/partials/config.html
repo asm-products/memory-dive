@@ -1,0 +1,111 @@
+<h1>CONFIGURATION</h1>
+
+<div>
+    <h2>Timezone</h2>
+
+    <h4 ng-hide="user.timezone || definingTimezone">
+        <a href="" ng-click="startDefineTimezone()" class="btn btn-warning">Define your timezone</a>
+    </h4>
+    <div ng-show="user.timezone && !definingTimezone">
+        <h3>Your defined timezone is {{user.timezone}}.</h3>
+        <h5><a href="" ng-click="startDefineTimezone()" class="btn btn-warning">Change timezone</a></h5>
+    </div>
+    <div ng-show="definingTimezone">
+        <h3>The timezone you are currently in is {{currentTimezoneName}}.<br>Do you wish to use this timezone?</h3>
+        <h5>
+            <a href="" class="btn btn-danger" ng-click="doneDefineTimezone(currentTimezoneName)">Yes</a>
+            <a href="" class="btn btn-default" ng-click="cancelDefineTimezone()">No</a>
+        </h5>
+    </div>
+</div>
+
+<div class="clear-fix"><br></div>
+<div class="clear-fix"><br></div>
+
+<div>
+    <h2>Backup Providers</h2>
+    <div>
+        <div class="well well-sm">
+            <div>
+                <a href="" class="btn btn-warning col-xs-12 col-sm-2" ng-click="toggleBackupProviders()"><i ng-class="{true:'fa fa-minus', false:'fa fa-plus'}[showBackupProviders]"></i> Add Backup Provider</a>
+                <div class="clear-fix"><br><br></div>
+
+                <div ng-show="showBackupProviders">
+                    <div class="row add-provider-row">
+                        <div ng-repeat="provider in availableBackupProviders" class="col-xs-12 col-sm-4 col-md-3 add-provider-div">
+                            <button class="btn btn-default btn-lg btn-block add-provider-btn" ng-click="addBackupProvider(provider)">
+                                <img ng-src="{{provider.providerPictureUrl}}" class="pull-left">
+                                <h5 class="add-provider-btn-title">Add {{provider.providerName}}</h5>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-repeat="provider in backupProviders">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="well well-sm">
+                    <div class="provider-list-item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-9">
+                                <img ng-src="{{provider.providerPictureUrl}}" class="img-circle provider-img" title="{{provider.providerName}}">
+                                <img ng-src="{{provider.pictureUrl}}" class="img-circle user-img">
+                                <h5 ng-bind="provider.displayName" class="user-name"></h5>
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <button type="button" class="btn btn-danger pull-right delete-btn" ng-click="deleteBackupProvider()">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <h2>Data Providers</h2>
+    <div>
+        <div class="well well-sm">
+            <div>
+                <a href="" class="btn btn-warning col-xs-12 col-sm-2" ng-click="toggleDataProviders()"><i ng-class="{true:'fa fa-minus', false:'fa fa-plus'}[showDataProviders]"></i> Add Provider</a>
+                <div class="clear-fix"><br><br></div>
+
+                <div ng-show="showDataProviders">
+                    <div class="row add-provider-row">
+                        <div ng-repeat="provider in availableDataProviders" class="col-xs-12 col-sm-4 col-md-3 add-provider-div">
+                            <button class="btn btn-default btn-lg btn-block add-provider-btn" ng-click="addDataProvider(provider)">
+                                <img ng-src="{{provider.providerPictureUrl}}" class="pull-left">
+                                <h5 class="add-provider-btn-title">Add {{provider.providerName}}</h5>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-repeat="provider in dataProviders">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="well well-sm">
+                    <div class="provider-list-item">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-9">
+                                <img ng-src="{{provider.providerPictureUrl}}" class="img-circle provider-img" title="{{provider.providerName}}">
+                                <img ng-src="{{provider.pictureUrl}}" class="img-circle user-img">
+                                <h5 ng-bind="provider.displayName" class="user-name"></h5>
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <button type="button" class="btn btn-danger pull-right delete-btn" ng-click="deleteDataProvider()">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

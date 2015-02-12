@@ -1,0 +1,305 @@
+{
+  "total_rows": 13,
+  "offset": 0,
+  "rows": [
+    {
+      "id": "165c32a4ce611e4b6d00d76bf4ee8cb6",
+      "key": "165c32a4ce611e4b6d00d76bf4ee8cb6",
+      "value": {
+        "rev": "7-052f56f9b1e740480689d0606f5ecee2"
+      },
+      "doc": {
+        "_id": "165c32a4ce611e4b6d00d76bf4ee8cb6",
+        "_rev": "7-052f56f9b1e740480689d0606f5ecee2",
+        "facebookId": "1291146609",
+        "facebookToken": "<blanked>",
+        "createdOn": 1399887087275,
+        "timestamp": 1400341804846,
+        "model": "User"
+      }
+    },
+    {
+      "id": "dbox-001619c186e893c8651e84a0e1b6dfbf2038708d",
+      "key": "dbox-001619c186e893c8651e84a0e1b6dfbf2038708d",
+      "value": {
+        "rev": "10-f4241d7501a2263953b49a45d8d7b2ac"
+      },
+      "doc": {
+        "_id": "dbox-001619c186e893c8651e84a0e1b6dfbf2038708d",
+        "_rev": "10-f4241d7501a2263953b49a45d8d7b2ac",
+        "userId": "165c32a4ce611e4b6d00d76bf4ee8cb6",
+        "providerId": "165c32a4ce611e4b6d00d76bf4f25012",
+        "modelId": "",
+        "mimeType": "image/jpeg",
+        "path": "<blanked>",
+        "extra": {
+          "thumbnailUrl": "<blanked>"
+        },
+        "utcOffset": -10800000,
+        "createdTime": 1385857261000,
+        "id": "dbox-001619c186e893c8651e84a0e1b6dfbf2038708d",
+        "model": "DropboxObject",
+        "updatedTime": 1385858555000
+      }
+    },
+    {
+      "id": "dbox-0019a88b390121efd80d75d43ae7dda4981e36bb",
+      "key": "dbox-0019a88b390121efd80d75d43ae7dda4981e36bb",
+      "value": {
+        "rev": "10-29e9e28d604065d967469cb8c192f044"
+      },
+      "doc": {
+        "_id": "dbox-0019a88b390121efd80d75d43ae7dda4981e36bb",
+        "_rev": "10-29e9e28d604065d967469cb8c192f044",
+        "userId": "165c32a4ce611e4b6d00d76bf4ee8cb6",
+        "providerId": "165c32a4ce611e4b6d00d76bf4f25012",
+        "modelId": "",
+        "mimeType": "video/mp4",
+        "path": "<blanked>",
+        "extra": {
+          "thumbnailUrl": "<blanked>"
+        },
+        "utcOffset": -10800000,
+        "createdTime": 1380779305000,
+        "id": "dbox-0019a88b390121efd80d75d43ae7dda4981e36bb",
+        "model": "DropboxObject",
+        "updatedTime": 1393499605000
+      }
+    },
+    {
+      "id": "dbox-00292134d025fc710fcf5d43eaf3b7315cfc336f",
+      "key": "dbox-00292134d025fc710fcf5d43eaf3b7315cfc336f",
+      "value": {
+        "rev": "10-1a3fe444e6ad58cae728150b5a4cbb75"
+      },
+      "doc": {
+        "_id": "dbox-00292134d025fc710fcf5d43eaf3b7315cfc336f",
+        "_rev": "10-1a3fe444e6ad58cae728150b5a4cbb75",
+        "userId": "165c32a4ce611e4b6d00d76bf4ee8cb6",
+        "providerId": "165c32a4ce611e4b6d00d76bf4f25012",
+        "modelId": "",
+        "mimeType": "video/mp4",
+        "path": "<blanked>",
+        "extra": {
+          "thumbnailUrl": "<blanked>"
+        },
+        "utcOffset": -10800000,
+        "createdTime": 1388403633000,
+        "id": "dbox-00292134d025fc710fcf5d43eaf3b7315cfc336f",
+        "model": "DropboxObject",
+        "updatedTime": 1393499590000
+      }
+    },
+    {
+      "id": "dbox-003f9f2d27164cd85f4b852ea10537e8c837d3cb",
+      "key": "dbox-003f9f2d27164cd85f4b852ea10537e8c837d3cb",
+      "value": {
+        "rev": "10-d28c373349983053f6381afc90da8d5d"
+      },
+      "doc": {
+        "_id": "dbox-003f9f2d27164cd85f4b852ea10537e8c837d3cb",
+        "_rev": "10-d28c373349983053f6381afc90da8d5d",
+        "userId": "165c32a4ce611e4b6d00d76bf4ee8cb6",
+        "providerId": "165c32a4ce611e4b6d00d76bf4f25012",
+        "modelId": "",
+        "mimeType": "video/mp4",
+        "path": "<blanked>",
+        "extra": {
+          "thumbnailUrl": "<blanked>"
+        },
+        "utcOffset": -10800000,
+        "createdTime": 1391704316000,
+        "id": "dbox-003f9f2d27164cd85f4b852ea10537e8c837d3cb",
+        "model": "DropboxObject",
+        "updatedTime": 1393499574000
+      }
+    },
+    {
+      "id": "fb-008e9cef481472459f2ce0ab4887da1c8e2ff52a",
+      "key": "fb-008e9cef481472459f2ce0ab4887da1c8e2ff52a",
+      "value": {
+        "rev": "4-5d76d02fd1bc536caef2a76c1cc739b2"
+      },
+      "doc": {
+        "_id": "fb-008e9cef481472459f2ce0ab4887da1c8e2ff52a",
+        "_rev": "4-5d76d02fd1bc536caef2a76c1cc739b2",
+        "userId": "165c32a4ce611e4b6d00d76bf4ee8cb6",
+        "modelId": "705174252_416437879252",
+        "type": "post",
+        "fromId": 705174252,
+        "extra": {
+          "type": "status",
+          "story": "<blanked>"
+        },
+        "utcOffset": 0,
+        "createdTime": 1279073288000,
+        "updatedTime": 1279073288000,
+        "id": "fb-008e9cef481472459f2ce0ab4887da1c8e2ff52a",
+        "model": "FacebookObject"
+      }
+    },
+    {
+      "id": "fb-00c9dd3c5e71e63523a5ba30ecd5552858d2e9e9",
+      "key": "fb-00c9dd3c5e71e63523a5ba30ecd5552858d2e9e9",
+      "value": {
+        "rev": "4-1035c93ee3020ce89ea5872ef1bf8200"
+      },
+      "doc": {
+        "_id": "fb-00c9dd3c5e71e63523a5ba30ecd5552858d2e9e9",
+        "_rev": "4-1035c93ee3020ce89ea5872ef1bf8200",
+        "userId": "165c32a4ce611e4b6d00d76bf4ee8cb6",
+        "modelId": "705174252_10150859333529253",
+        "type": "post",
+        "fromId": 705174252,
+        "extra": {
+          "type": "status",
+          "story": "<blanked>"
+        },
+        "utcOffset": 0,
+        "createdTime": 1268769934000,
+        "updatedTime": 1268769934000,
+        "id": "fb-00c9dd3c5e71e63523a5ba30ecd5552858d2e9e9",
+        "model": "FacebookObject"
+      }
+    },
+    {
+      "id": "fb-00e79d10198063b3eaf4e41bb9580873791cfaee",
+      "key": "fb-00e79d10198063b3eaf4e41bb9580873791cfaee",
+      "value": {
+        "rev": "4-7b2bdd7dbd67bdfb834e8e5716d7b8b2"
+      },
+      "doc": {
+        "_id": "fb-00e79d10198063b3eaf4e41bb9580873791cfaee",
+        "_rev": "4-7b2bdd7dbd67bdfb834e8e5716d7b8b2",
+        "userId": "165c32a4ce611e4b6d00d76bf4ee8cb6",
+        "modelId": "1291146609_1376827742670",
+        "type": "post",
+        "fromId": 1291146609,
+        "extra": {
+          "type": "status",
+          "story": "<blanked>"
+        },
+        "utcOffset": -10800000,
+        "createdTime": 1267382398000,
+        "updatedTime": 1267382398000,
+        "id": "fb-00e79d10198063b3eaf4e41bb9580873791cfaee",
+        "model": "FacebookObject"
+      }
+    },
+    {
+      "id": "tw-001168f18c1833c3ec9b684891c8f09a992db823",
+      "key": "tw-001168f18c1833c3ec9b684891c8f09a992db823",
+      "value": {
+        "rev": "6-5947a624636044ed4182b116b8576782"
+      },
+      "doc": {
+        "_id": "tw-001168f18c1833c3ec9b684891c8f09a992db823",
+        "_rev": "6-5947a624636044ed4182b116b8576782",
+        "userId": "165c32a4ce611e4b6d00d76bf4ee8cb6",
+        "modelId": "432967502659063800",
+        "type": "status",
+        "text": "\"When Bill Gates first saw a Mac, he didn’t laugh — he wanted to know how it worked, right down to specific details\" http://t.co/3VqUBO42gI",
+        "extra": {
+          "retweeted": false,
+          "by": "ierceg"
+        },
+        "utcOffset": -10800000,
+        "createdTime": 1392062471000,
+        "id": "tw-001168f18c1833c3ec9b684891c8f09a992db823",
+        "model": "TwitterObject"
+      }
+    },
+    {
+      "id": "tw-0022e06880d4073c7f319627a74118f4045db455",
+      "key": "tw-0022e06880d4073c7f319627a74118f4045db455",
+      "value": {
+        "rev": "6-1f8b946685e8f6f46c3cef1c564a8ebc"
+      },
+      "doc": {
+        "_id": "tw-0022e06880d4073c7f319627a74118f4045db455",
+        "_rev": "6-1f8b946685e8f6f46c3cef1c564a8ebc",
+        "userId": "165c32a4ce611e4b6d00d76bf4ee8cb6",
+        "modelId": "319630684459245600",
+        "type": "status",
+        "text": "\"And manipulated perceptions produce a manipulated map of the world.\" http://t.co/ujA5gc38hy",
+        "extra": {
+          "retweeted": false,
+          "by": "ierceg"
+        },
+        "utcOffset": -10800000,
+        "createdTime": 1365040868000,
+        "id": "tw-0022e06880d4073c7f319627a74118f4045db455",
+        "model": "TwitterObject"
+      }
+    },
+    {
+      "id": "tw-004a90f015b26c6ec963abfec6e59f1eba1cece5",
+      "key": "tw-004a90f015b26c6ec963abfec6e59f1eba1cece5",
+      "value": {
+        "rev": "6-0fdf372cb18f3223a5ff0c26e4eb59ea"
+      },
+      "doc": {
+        "_id": "tw-004a90f015b26c6ec963abfec6e59f1eba1cece5",
+        "_rev": "6-0fdf372cb18f3223a5ff0c26e4eb59ea",
+        "userId": "165c32a4ce611e4b6d00d76bf4ee8cb6",
+        "modelId": "210325307968851970",
+        "type": "status",
+        "text": "\"This seems to me a common situation – things said to be critiques of capitalism are often just critiques of humanity\" http://t.co/s7NDMzaS",
+        "extra": {
+          "retweeted": false,
+          "by": "ierceg"
+        },
+        "utcOffset": -10800000,
+        "createdTime": 1338980435000,
+        "id": "tw-004a90f015b26c6ec963abfec6e59f1eba1cece5",
+        "model": "TwitterObject"
+      }
+    },
+    {
+      "id": "tw-00861be8270f26d3b71073000f2baea0838171dd",
+      "key": "tw-00861be8270f26d3b71073000f2baea0838171dd",
+      "value": {
+        "rev": "6-beec5e16fad9d7d9aca7563e8908cd6d"
+      },
+      "doc": {
+        "_id": "tw-00861be8270f26d3b71073000f2baea0838171dd",
+        "_rev": "6-beec5e16fad9d7d9aca7563e8908cd6d",
+        "userId": "165c32a4ce611e4b6d00d76bf4ee8cb6",
+        "modelId": "344178743985704960",
+        "type": "status",
+        "text": "Today, Tim settles all family business.",
+        "extra": {
+          "retweeted": true,
+          "by": "siracusa"
+        },
+        "utcOffset": -10800000,
+        "createdTime": 1370893581000,
+        "id": "tw-00861be8270f26d3b71073000f2baea0838171dd",
+        "model": "TwitterObject"
+      }
+    },
+    {
+      "id": "tw-008ed5d104858c5bd90041df34a647cf6ec92e12",
+      "key": "tw-008ed5d104858c5bd90041df34a647cf6ec92e12",
+      "value": {
+        "rev": "6-35ad2e9f1792365da33338a38b846a45"
+      },
+      "doc": {
+        "_id": "tw-008ed5d104858c5bd90041df34a647cf6ec92e12",
+        "_rev": "6-35ad2e9f1792365da33338a38b846a45",
+        "userId": "165c32a4ce611e4b6d00d76bf4ee8cb6",
+        "modelId": "455506124645871600",
+        "type": "status",
+        "text": "\"Možda su bili malo ludi, asocijalni ili na drogama. Ali svi su verovali da su oni ti koji mogu da promene stvari.\" http://t.co/DIBBPgb4on",
+        "extra": {
+          "retweeted": false,
+          "by": "ierceg"
+        },
+        "utcOffset": -10800000,
+        "createdTime": 1397436097000,
+        "id": "tw-008ed5d104858c5bd90041df34a647cf6ec92e12",
+        "model": "TwitterObject"
+      }
+    }
+  ]
+}

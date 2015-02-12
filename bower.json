@@ -1,0 +1,25 @@
+{
+  "name": "memory-dive",
+  "dependencies": {
+    "angular": "~1.2.16",
+    "angular-ui-router": "0.2.10",
+    "angular-cookies": "~1.2.16",
+    "angular-lodash": "~0.1.0",
+    "angular-route": "~1.2.16",
+    "font-awesome-bower": "~4.0.3",
+    "lodash": "~2.4.1",
+    "bootstrap-sass-official": "~3.1.1",
+    "jquery": "~2.1.1",
+    "angular-loading-bar": "~0.4.2",
+    "angular-animate": "~1.2.16",
+    "morrisjs": "~0.5.0"
+  },
+  "overrides": {
+    "angular-lodash": {
+      "main": "angular-lodash.js"
+    }
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.16"
+  }
+}

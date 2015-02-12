@@ -1,0 +1,84 @@
+<%- stylesheet_link_tag('user.profile') %>
+
+<div id="container" class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <% if(user && user.picture && user.picture.url) { %>
+                            <img src="<%= user.picture.url %>" alt="" class="img-rounded img-responsive" />
+                        <% } else { %>
+                            <img src="http://placehold.it/380x500" alt="" class="img-rounded img-responsive" />
+                        <% } %>
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <h4 id='name'><%= user.displayName %></h4>
+                        <% if(user && user.location) { %>
+                            <small>
+                                <cite title="<%= user.location.name %>"><%= user.location.name %>
+                                    <i class="glyphicon glyphicon-map-marker">
+                                    </i>
+                                </cite>
+                            </small>
+                        <% } %>
+                        <p>
+                            <% if(user && user.email) { %>
+                                <i class="glyphicon glyphicon-envelope"></i><%= user.email %>
+                                <br/>
+                            <% } %>
+                            <% if(user && user.birthday) { %>
+                                <i class="glyphicon glyphicon-gift"></i><%= user.birthday %></p>
+                            <% } %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="well well-sm">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                            <a class="btn btn-block btn-social btn-facebook" id="facebook-btn" href="/stats/facebook">
+                                <i class="fa fa-facebook"></i>
+                                Facebook stats
+                            </a>
+                        <%
+                            if(!user || !user.twitter) {
+                        %>
+                            <a class="btn btn-block btn-social btn-twitter" id="twitter-btn" href="/auth/twitter/add">
+                                <i class="fa fa-twitter"></i>
+                                Connect Twitter
+                            </a>
+                        <%
+                            } else {
+                        %>
+                            <a class="btn btn-block btn-social btn-twitter" id="twitter-btn" href="/user/<%= user.id %>/stats/twitter">
+                                <i class="fa fa-twitter"></i>
+                                Twitter stats
+                            </a>
+                        <%
+                            }
+
+                            if(!user || !user.dropbox) {
+                        %>
+                            <a class="btn btn-block btn-social btn-dropbox" id="dropbox-btn" href="/dropbox/add">
+                                <i class="fa fa-dropbox"></i>
+                                Connect Dropbox
+                            </a>
+                        <%
+                            } else {
+                        %>
+                            <a class="btn btn-block btn-social btn-dropbox" id="dropbox-btn" href="/user/<%= user.id %>/stats/dropbox">
+                                <i class="fa fa-dropbox"></i>
+                                Dropbox stats
+                            </a>
+                        <%
+                            }
+                        %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

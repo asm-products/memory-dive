@@ -1,0 +1,146 @@
+// bootstrap variable overrides
+$icon-font-path: "../fonts/bootstrap/" !default;
+
+@import "bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+
+body {
+  background: #fff;
+}
+
+h1 {
+  padding-bottom: 1em;
+}
+
+// menu bar
+ul.nav li img {
+  height: 38px;
+  margin: 6px 6px 6px 16px;
+}
+
+// item renderer
+.day-view-items {
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    border-top: 2px solid #ccc;
+    padding-top: 0.6em;
+  }
+
+  .day-item {
+    word-break: normal;
+    text-overflow: ellipsis;
+    display: block;
+    padding: 1em;
+    margin-top: 2px;
+    padding-bottom: 0px;
+
+    &:hover {
+      background-color: #fafafa;
+      margin-top: 0px;
+      padding-bottom: 2px;
+      @include box-shadow(0 4px 5px 0px rgba(0,0,0,0.7));
+    }
+  }
+
+  img.dropbox-thumb {
+    width: 100%;
+  }
+}
+
+
+// responsive video object styles
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+ 
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+ 
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+  .flex-video { padding-top: 0; }
+}
+// end: responsive video object styles
+
+
+// config providers
+.provider-list-item {
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: #fff;
+    border: 1px dotted #ccc;
+  }
+
+  .provider-img {
+    height:48px; width:48px; margin:8px 2px 8px 8px;
+  }
+
+  .user-img {
+    height:48px; width:48px; margin:4px 4px 4px 2px;
+  }
+
+  .user-name {
+    display: inline;
+  }
+
+  .delete-btn {
+    margin: 8px 8px 8px 8px;
+  }
+}
+.add-provider-row {
+  padding:8px;
+
+  .add-provider-div {
+    padding:8px;
+
+    .add-provider-btn {
+      padding:8px;
+
+      .add-provider-btn-title {
+        float: right !important;
+        margin-top: 0px;
+        padding-top: 0px;
+      }
+    }
+  }
+}
+
+
+// override loading bar styles
+#loading-bar .bar {
+  background: #ff0000;
+}
+#loading-bar-spinner .spinner-icon {
+  width: 32px;
+  height: 32px;
+  border-top-color:  #ff0000;
+  border-left-color: #ff0000;
+  border-radius: 32px;
+}
+#loading-bar .peg {
+  -moz-box-shadow: #ff0000 1px 0 6px 1px;
+  -ms-box-shadow: #ff0000 1px 0 6px 1px;
+  -webkit-box-shadow: #ff0000 1px 0 6px 1px;
+  box-shadow: #ff0000 1px 0 6px 1px;
+}
+
+.search-group {
+  width: 200px;
+}

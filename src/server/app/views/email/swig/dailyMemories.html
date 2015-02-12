@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <h3>Dear {{displayName}}!</h3>
+
+  {% if count < 1 %}
+    <p>There were no events on today's date.</p>
+  {% elseif count == 1 %}
+    <p>There was one event on today's date.</p>
+    <p><a href="{{link}}">Click here</a> to see what it was!</p>
+  {% else %}
+    <p>There were {{count}} events on today's date.</p>
+    <p><a href="{{link}}">Click here</a> to see them all!</p>
+  {% endif %}
+
+  <div class="providers">
+
+    {% if totals.Twitter > 0 %}
+    <div class="provider">
+      <img src="{{baseUrl}}/images/twitter.png">
+      <br>
+      {{totals.Twitter}}
+    </div>
+    {% endif %}
+
+    {% if totals.Facebook > 0 %}
+    <div class="provider">
+      <img src="{{baseUrl}}/images/facebook.png">
+      <br>
+      {{totals.Facebook}}
+    </div>
+    {% endif %}
+
+    {% if totals.Dropbox > 0 %}
+    <div class="provider">
+      <img src="{{baseUrl}}/images/dropbox.png">
+      <br>
+      {{totals.Dropbox}}
+    </div>
+    {% endif %}
+
+    {% if totals.Evernote > 0 %}
+    <div class="provider">
+      <img src="{{baseUrl}}/images/evernote.png">
+      <br>
+      {{totals.Evernote}}
+    </div>
+    {% endif %}
+
+    {% if totals.Slack > 0 %}
+    <div class="provider">
+      <img src="{{baseUrl}}/images/slack.png">
+      <br>
+      {{totals.Slack}}
+    </div>
+    {% endif %}
+
+    {% if totals.Foursquare > 0 %}
+    <div class="provider">
+      <img src="{{baseUrl}}/images/foursquare.png">
+      <br>
+      {{totals.Foursquare}}
+    </div>
+    {% endif %}
+
+  </div>
+
+  <p>
+    <br><br>
+    Thanks,<br>
+    Ivan<br><br>
+    Founder<br>
+    <a href="mailto:ivan@memorydive.io">ivan@memorydive.io</a>
+  </p>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+<div class="clearfix"><br></div>
+
+<div class="btn-group btn-group-justified">
+    <a class="btn btn-labeled btn-default btn-lg" href="" ng-click="getPrevDayData(calendarDay.prevDayUrl)">
+        <i class="fa fa-chevron-left fa-lg"></i>
+        Previous
+    </a>
+    <a class="btn btn-labeled btn-default btn-lg" href="" ng-click="getNextDayData(calendarDay.nextDayUrl)">
+        Next
+        <i class="fa fa-chevron-right fa-lg"></i>
+    </a>
+</div>
+
+<div class="clearfix"><br></div>
+
+<div class="day-view-items">
+    <h1 ng-bind="calendarDay.date"></h1>
+
+    <div ng-repeat="year in calendarDay.years">
+        <h2>{{year.year}}</h2>
+
+        <div class="row" ng-repeat="row in year.rows">
+            <div class="col-md-3" ng-repeat="event in row">
+                <mofs-item-renderer data-event="event" data-last-year="$parent.$parent.$last" data-last-row="$parent.$last" data-last-item="$last" class="day-item"></mofs-facebook-item>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"><br></div>
+</div>
+
+<div class="btn-group btn-group-justified">
+    <a class="btn btn-labeled btn-default btn-lg" href="" ng-click="getPrevDayData(calendarDay.prevDayUrl)">
+        <i class="fa fa-chevron-left fa-lg"></i>
+        Previous
+    </a>
+    <a class="btn btn-labeled btn-default btn-lg" href="" ng-click="getNextDayData(calendarDay.nextDayUrl)">
+        Next
+        <i class="fa fa-chevron-right fa-lg"></i>
+    </a>
+</div>

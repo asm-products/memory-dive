@@ -1,0 +1,13 @@
+<div class="clearfix"><br></div>
+
+<div class="day-view-items">
+    <h1 ng-bind="searchData.query"></h1>
+
+    <div class="row" ng-repeat="event in searchData.events">
+        <div class="col-md-12">
+            <mofs-item-renderer data-event="event" data-last-year="$parent.$parent.$last" data-last-row="$parent.$last" data-last-item="$last" date-format="YYYY-MM-DD HH:mm:ss" class="day-item"></mofs-facebook-item>
+        </div>
+    </div>
+
+    <div class="clearfix"><br></div>
+</div>

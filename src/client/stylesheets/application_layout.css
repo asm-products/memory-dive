@@ -1,0 +1,21 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 1em;
+  padding-bottom: 0.4em;
+}
+
+#signin-button {
+    /*  We have to pad the button as it's actually an a tag so navbar-right aligns it to the right. */
+    padding-right:0.8em !important;
+}
+
+#signin-icon {
+    /*  We have to pad the button as it's actually an a tag so navbar-right aligns it to the right. */
+    padding-top:1em;
+}
+
+footer {
+    padding-top: 2em;
+}
+
+.footer-copyright {text-align: center;}

@@ -1,0 +1,125 @@
+<%- stylesheet_link_tag('user.day') %>
+
+<div id="container" class="container">
+    <div class="btn-group btn-group-justified">
+        <a class="btn btn-labeled btn-default" href="<%= locals.data.prev %>">
+            <span><i class="glyphicon glyphicon-chevron-left"></i></span>
+            Previous
+        </a>
+        <a class="btn btn-labeled btn-default" href="<%= locals.data.next %>">
+            Next
+            <span><i class="glyphicon glyphicon-chevron-right"></i></span>
+        </a>
+    </div>
+    <%
+        if(!locals.data || _.isEmpty(locals.data.rows)) {
+    %>
+    <div class="row">
+        <div class="well well-sm">
+            <h1>TODO: no locals.data</h1>
+        </div>
+    </div>
+    <%
+        } else {
+            var year;
+
+            var currentCol = 0;
+            var rowOpen = false;
+            var MAX_COLUMNS = 4;
+            var COLUMN_CLASS = 'col-md-3';
+
+            //  We sort the items in the reverse time order (that's what the '-' is for)
+            //  This gives the user the view from the latest to the oldest items (rather obviously)
+            var sortedRows = _.sortBy(locals.data.rows, function(row) {
+                return -row.value.createdTime;
+            });
+
+            //  Print out the items sorted by years and times.
+            _.forEach(sortedRows, function(row) {
+
+                if(!row || !row.value || !row.value.model) {
+                    viewDebug('Badly formed item:', JSON.stringify(row));
+                    return;
+                }
+
+                var item = row.value;
+                //  Get the user's timezone year.
+                //  TODO: Convert the date to correct timezone.
+                var itemCreatedYear = (new Date(item.createdTime)).getFullYear();
+
+                //  locals.viewDebug(JSON.stringify(item));
+
+                //  We close the last row of the previous year.
+                if((_.isUndefined(year) || year !== itemCreatedYear)) {
+                    if(rowOpen) {
+    %>
+    </div>
+    <%
+                    }
+
+                    year = itemCreatedYear;
+                    currentCol = 0;
+                    rowOpen = false;
+
+    %>
+    <div class="row">
+        <h2 id="year-header"><%= year %></h2>
+    </div>
+    <%
+                }
+
+                if(currentCol === 0) {
+    %>
+    <div class="row">
+    <%
+                    rowOpen = true;
+                }
+
+    %>
+        <div class='<%= COLUMN_CLASS %>'>
+            <%- locals.render(item) %>
+        </div>
+    <%
+
+                currentCol = currentCol + 1;
+                if(currentCol === MAX_COLUMNS) {
+    %>
+    </div>
+    <%
+                    currentCol = 0;
+                    rowOpen = false;
+                }
+
+            });
+
+            if(rowOpen) {
+    %>
+    </div>
+    <%
+            }
+
+        }
+    %>
+</div>
+
+<%- stylesheet_link_tag('bootstrap-buttons-with-labels') %>
+<%  var dropboxPresent = locals.user && locals.user.dropbox && locals.user.dropbox.token;
+
+    if(dropboxPresent) {
+%>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/dropbox.js/0.10.2/dropbox.min.js"></script>
+        <script>(function() {
+                var client = new Dropbox.Client({ token: '<%= locals.user.dropbox.token %>' });
+                var imgs = document.images;
+                for(var i = 0; i < imgs.length; ++i) {
+                    var img = imgs[i];
+                    if(img.id.indexOf('dropbox-') == 0) {
+                        var path = img.id.substring(8);
+                        img.src = client.thumbnailUrl(path, { size: 'm' });
+                    }
+                }
+            })();
+        </script>
+<%
+    }
+%>
