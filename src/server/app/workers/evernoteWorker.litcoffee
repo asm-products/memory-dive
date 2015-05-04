@@ -110,4 +110,8 @@ For each retrieved item we create a new object that will be persisted to the dat
                             return callback err if err
                             return next()
 
-                return next()
+Prevent too deep recursion by invoking `next` in the next event loop.
+
+                setImmediate () ->
+                    return next()
+                , 0

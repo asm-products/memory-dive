@@ -14,5 +14,9 @@ module.exports = {
    'production': {
       'driver':   'nano',
       'url':      process.env.MEMORY_DIVE_COUCHDB_SERVER_URL
+   },
+   'custom': {
+      'driver':   process.env.MEMORY_DIVE_CUSTOM_DB_DRIVER,
+      'url':      process.env.MEMORY_DIVE_CUSTOM_DB_SERVER_URL
    }
 };

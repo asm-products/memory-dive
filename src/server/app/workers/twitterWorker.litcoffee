@@ -118,4 +118,8 @@ Before we create the object we add it the `utcOffset` we got from the user.
                             return callback err if err
                             return next()
 
-                return next()
+Prevent too deep recursion by invoking `next` in the next event loop.
+
+                setImmediate () ->
+                    return next()
+                , 0

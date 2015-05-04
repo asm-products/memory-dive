@@ -97,6 +97,10 @@ Generate the object and enqueue it for uploading.
                 if not _.isUndefined object
                     app.common.bulkDataUploader.enqueue object
 
-                return next()
+Prevent too deep recursion by invoking `next` in the next event loop.
+
+                setImmediate () ->
+                    return next()
+                , 0
 
     exports.updateUserData = updateUserData
